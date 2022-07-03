@@ -28,10 +28,6 @@ ADD SpaceVim.toml /root/.SpaceVim.d/init.toml
 RUN yes | pacman -S zsh
 RUN git clone --depth=1 https://github.com/ohmyzsh/ohmyzsh.git ~/.oh-my-zsh && cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
 
-# Use proxy
-RUN echo "export http_proxy=http://host.docker.internal:$HOST_PROXY_PORT" >> ~/.zshrc
-RUN echo "export https_proxy=http://host.docker.internal:$HOST_PROXY_PORT" >> ~/.zshrc
-
 # Install shadowsocks and proxychains-ng
 RUN yes | pacman -S shadowsocks proxychains-ng
 
