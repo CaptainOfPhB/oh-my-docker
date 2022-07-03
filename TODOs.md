@@ -1,5 +1,5 @@
 # TODOs
 
 - [ ] zshrc
-- [ ] zprezto & .zpreztorc
-- [ ]  zsh-completions
+- [ ] brew install antigen
+- [ ] `nrm` have an unfixed bug, use `nrs` or `nrm-ng` instead
